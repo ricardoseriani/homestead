@@ -33,7 +33,7 @@ After=systemd-user-sessions.service
 
 [Service]
 Type=simple
-ExecStart=meilisearch
+ExecStart=/usr/bin/meilisearch --http-addr '0.0.0.0:7700'
 
 [Install]
 WantedBy=default.target
